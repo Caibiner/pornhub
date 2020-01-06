@@ -19,6 +19,7 @@ if __name__ == "__main__":
     ts = []
     while page<1000:
         print("第%d段"%page)
+        #视频的URL放下行(Request URL)，注意 str(page)改成下列形式
         url ='https://cv-h.phncdn.com/hls/videos/202001/04/273838141/,720P_4000K,480P_2000K,240P_400K,_273838141.mp4.urlset/seg-'+str(page)+'-f2-v1-a1.ts?tW7RbMgafU3rBHX9Ratevjho3bYwS3cks6Lp30gmti8uS6x6Mhqhmeig02xYK2kdziqiUsJqzcIg-xmHTuws-AYRjOTQ7po-q4TpQfyyHZH9ocwEfTTDvqmJVtq-SLEbrDP5hfg4tTcEpceKDE7NRJDJLFx8V8qDlVEGfdBL1s6GvFdxjQ'
         r = requests.get(url,headers=headers)
         if r.status_code !=200:
