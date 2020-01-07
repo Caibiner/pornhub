@@ -1,0 +1,6 @@
+selenium
+tqdm
+BeautifulSoup
+requests
+etree
+js2py
