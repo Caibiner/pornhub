@@ -88,6 +88,6 @@ if __name__ == "__main__":
     
     # file number
     num = 3
-    
+    os.startfile(r'I:\thunder\Program\Thunder.exe')
     key_urls = keywords_url(key,num)
     download(key_urls,address,key)
